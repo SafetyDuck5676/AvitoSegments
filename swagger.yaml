@@ -1,0 +1,104 @@
+swagger: '2.0'
+info:
+  contact: {}
+  title: Avito
+  version: 1.0.0
+basePath: /localhost
+paths:
+  /add/{slug}/{user_id}:
+    parameters:
+      - in: path
+        name: slug
+        required: true
+        type: string
+      - in: path
+        name: user_id
+        required: true
+        type: string
+    get:
+      parameters: []
+      responses:
+        '200':
+          description: ''
+      description: localhost:8081/add/
+      operationId: localhost8081AddSlugUserId
+      summary: localhost:8081/add/
+  /newSeg/{slug}:
+    parameters:
+      - in: path
+        name: slug
+        required: true
+        type: string
+    get:
+      parameters: []
+      responses:
+        '200':
+          description: ''
+      description: localhost:8081/newSeg/
+      operationId: localhost8081NewsegSlug
+      summary: localhost:8081/newSeg/
+  /newSegAutoAdd/{slug}/{percent}:
+    parameters:
+      - in: path
+        name: slug
+        required: true
+        type: string
+      - in: path
+        name: percent
+        required: true
+        type: string
+    get:
+      parameters: []
+      responses:
+        '200':
+          description: ''
+      description: localhost:8081/newSegAutoAdd/:slug/:percent
+      operationId: localhost8081NewsegautoaddSlugPercent
+      summary: localhost:8081/newSegAutoAdd/:slug/:percent
+  /remove/{slug}/{user_id}:
+    parameters:
+      - in: path
+        name: slug
+        required: true
+        type: string
+      - in: path
+        name: user_id
+        required: true
+        type: string
+    get:
+      parameters: []
+      responses:
+        '200':
+          description: ''
+      description: localhost:8081/remove//
+      operationId: localhost8081RemoveSlugUserId
+      summary: localhost:8081/remove//
+  /rmSeg/{slug}:
+    parameters:
+      - in: path
+        name: slug
+        required: true
+        type: string
+    get:
+      parameters: []
+      responses:
+        '200':
+          description: ''
+      description: localhost:8081/rmSeg/
+      operationId: localhost8081RmsegSlug
+      summary: localhost:8081/rmSeg/
+  /user/{user_id}:
+    parameters:
+      - in: path
+        name: user_id
+        required: true
+        type: string
+    get:
+      parameters: []
+      responses:
+        '200':
+          description: ''
+      description: localhost:8081/user/
+      operationId: localhost8081UserUserId
+      summary: localhost:8081/user/
+tags: []
